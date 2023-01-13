@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Super Kings</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div id="nav_bar">
+        <div class="nav_left">
+            <a href="{% url 'user:signup' %}"><button class="btn">Sign Up</button></a>
+            <a href="{% url 'user:home' %}"><div class="sub"><b>HOME</b></div></a>
+            <a href=""><div class="sub"><b>TEAM</b></div></a>
+            <a href="{% url 'user:shop' %}"><div class="sub"><b>SHOP</b></div></a>
+        </div>
+        <div class="nav_center">
+            <div class="nav_img"><img src="{% static 'images/logo.png' %}" alt=""></div>
+        </div>
+        <div class="nav_right">
+            <a href=""><div class="sub"><b>ACADEMY</b></div></a>
+            <a href="{% url 'user:info' %}"><div class="sub"><b>INFO</b></div></a>
+            <a href=""><div class="sub"><b>MORE</b></div></a>
+            <a href="{% url 'user:login' %}"><button class="btn">Login</button></a>
+        </div>
+        
+    </div>
+
+
+
+    <div class="marquee">
+        <marquee behavior="" direction=""><img id="marquee_img" src="{% static 'images/marquee.png' %}" alt=""></marquee> 
+    </div>
+
+    <div id="latest_news">
+         <b>LATEST NEWS</b>
+    </div>
+    <div class="container">
+        <div class="card"><img src="{% static 'images/card1.jpg' %}" alt=""><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatem.</b></div>
+        <div class="card"><img src="{% static 'images/card2.webp' %}" alt=""><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, illo!</b></div>
+        <div class="card"><img src="{% static 'images/card3.jpg' %}" alt=""><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ducimus!</b></div>
+        <div class="card"><img src="{% static 'images/card5.jpg' %}" alt=""><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, ipsa.</b></div>
+        <div class="card"><img src="{% static 'images/card6.png' %}" alt=""><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, sit!</b></div>
+        <div class="card"><img src="{% static 'images/card1.jpg' %}" alt=""><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae.</b></div>
+        <div class="card"><img src="{% static 'images/card2.webp' %}" alt=""><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, pariatur.</b></div>
+        <div class="card"><img src="{% static 'images/card3.jpg' %}" alt=""><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, praesentium?</b></div>
+        <div class="card"><img src="{% static 'images/card5.jpg' %}" alt=""><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quam!</b></div>
+        <div class="card"><img src="{% static 'images/card1.jpg' %}" alt=""><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repudiandae.</b></div>
+        <div class="card"><img src="{% static 'images/card3.jpg' %}" alt=""><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ducimus!</b></div>
+        <div class="card"><img src="{% static 'images/card6.png' %}" alt=""><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, placeat.</b></div>
+    </div>
+
+    <hr>
+
+    <div class="shop_the_best">SHOP THE BEST</div>
+
+    <div class="container_shop">
+
+        <div class="shop">
+            <div>
+            <img src="{% static 'images/sale1.png' %}" alt="">
+            </div>
+           <div class="shop_now"><button>SHOP NOW</button></div>
+        </div>
+
+        <div class="shop">
+            <div>
+            <img src="{% static 'images/sale1.png' %}" alt="">
+            </div>
+           <div class="shop_now"><button>SHOP NOW</button></div>
+        </div>
+
+        
+        <div class="shop">
+            <div>
+            <img src="{% static 'images/sale1.png' %}" alt="">
+            </div>
+           <div class="shop_now"><button>SHOP NOW</button></div>
+        </div>
+
+        
+        <div class="shop">
+            <div>
+            <img src="{% static 'images/sale1.png' %}" alt="">
+            </div>
+           <div class="shop_now"><button>SHOP NOW</button></div>
+        </div>
+    </div>
+
+    <hr id="hr_1">
+
+    <div class="view_more">
+        <a href="{% url 'user:shop' %}">    
+            <B>SHOP NOW | MORE OFFERS</B>
+         </a>
+    </div>
+
+    <div class="footer">
+        <div class="footer_text">
+          <a href=""><b>CSK@gmail.com</b></a>
+        </div>
+        <div class="footer_text">
+           <a href=""><b>Terms & condition</b></a>
+            <b class="white">|</b>
+            <a href=""><b>Contact</b></a> 
+            <b class="white">|</b>
+            <a href=""><b>Privacy policy</b></a>
+            <b class="white">|</b>
+            <a href=""><b>Disclaimer</b></a>
+        </div>
+    </div>
+</body>
+</html>

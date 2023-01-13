@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK | Login page</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+</head>
+
+<body>
+
+    <div class="container_login">
+        <div class="login_box">
+            <div class="part_1">
+                <img src="{% static 'images/logo.png' %}" alt="">
+            </div>
+            <div class="part_2">
+
+                <div class="part_2_text">
+                    <b id="join_the_text">Join the <br>#Yellove family</b>
+                    <div>
+                        <form action="">
+                            <input type="email" name="" id="input_1" placeholder="  Email" required>
+
+                            <input type="password" name="" id="input_2" placeholder="  Password" required>
+
+                            <div>
+                                <a style="text-decoration: none;" href=""><b id="forgot_pass">Forgot Password?</b></a>
+                            </div>
+                            <div id="container_btn-2">
+                                <button type="submit" id="btn_2">LOGIN</button>
+                            </div>
+                        </form>
+                        <div id="sign_up">
+                            <a href="{% url 'user:signup' %}"><b id="sign_btn">Sign Up</b></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

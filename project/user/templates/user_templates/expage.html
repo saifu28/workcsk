@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/expage.css' %}">
+</head>
+<body>
+
+<!-- extends used only info page -->
+
+
+
+    <div id="nav_bar">
+        <div class="nav_left">
+            <a href="{% url 'user:signup' %}"><button class="btn">Sign Up</button></a>
+            <a href="{% url 'user:home' %}">
+                <div class="sub"><b>HOME</b></div>
+            </a>
+            <a href="">
+                <div class="sub"><b>TEAM</b></div>
+            </a>
+            <a href="{% url 'user:shop' %}">
+                <div class="sub"><b>SHOP</b></div>
+            </a>
+        </div>
+        <div class="nav_center">
+            <div class="nav_img"><img src="{% static 'images/logo.png' %}" alt=""></div>
+        </div>
+        <div class="nav_right">
+            <a href="">
+                <div class="sub"><b>ACADEMY</b></div>
+            </a>
+            <a href="{% url 'user:info' %}">
+                <div class="sub"><b>INFO</b></div>
+            </a>
+            <a href="">
+                <div class="sub"><b>MORE</b></div>
+            </a>
+            <a href="{% url 'user:login' %}"><button class="btn">Login</button></a>
+        </div>
+
+    </div>
+
+
+    {% block bodytext %}
+    {% endblock %}
+
+    <hr id="hr_1">
+
+    <div class="view_more">
+        <a href="{% url 'user:signup' %}">    
+            <B>
+
+                {% block downlinetext %}
+                {% endblock %}
+
+            </B>
+         </a>
+    </div>
+
+    <div class="footer">
+        <div class="footer_text">
+          <a href=""><b>CSK@gmail.com</b></a>
+        </div>
+        <div class="footer_text">
+           <a href=""><b>Terms & condition</b></a>
+            <b class="white">|</b>
+            <a href=""><b>Contact</b></a> 
+            <b class="white">|</b>
+            <a href=""><b>Privacy policy</b></a>
+            <b class="white">|</b>
+            <a href=""><b>Disclaimer</b></a>
+        </div>
+    </div>
+        
+</body>
+</html>

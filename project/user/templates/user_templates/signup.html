@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK | create </title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+
+<body>
+    <div class="container" >
+        <div class="box_form">
+            
+
+
+            <table id="table">
+                <form action="">
+                    <tr>
+                        <td colspan="3"><h2>Sign Up</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="t_text" for="first_name">First name</label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input class="t-input" type="text" id="first_name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="t_text" for="2nd_name">2nd name</label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input class="t-input" type="text" id="2nd_name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="t_text" for="ph_numbre">Phone</label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input class="t-input" type="number" id="ph_number" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="t_text" for="mail">E-mail</label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input class="t-input" type="email" id="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="t_text" for="pass">Password</label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input class="t-input" type="password" id="pass" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="t_text" for="re_pass">Re-enter</label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input class="t-input" type="password" id="re_pass" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button id="btn_sign" type="submit">Sign Up</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+
+    <div class="para"><a href="{% url 'user:home' %}"><p>Back to home page..</p></a></div>
+
+
+
+</body>
+
+</html>

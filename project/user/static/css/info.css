@@ -1,0 +1,18 @@
+
+.container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 30px;
+    
+
+}
+.info_note{
+    background-image: linear-gradient(to right,rgb(24, 23, 23),rgb(107, 107, 107));
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+}
+.info_note p{
+    color: white;
+}

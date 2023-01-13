@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+.container_login{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_box {
+    display: flex;
+    height: 60%;
+    width: 60%;
+    border-radius: 10px;
+
+}
+
+.part_1 {
+    width: 35%;
+    height: 100%;
+    background-color: #ffc703;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part_1 img {
+    width: 100%;
+}
+
+.part_2 {
+    width: 65%;
+    height: 100%;
+    background-color: #074284;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part_2_text {
+    padding-top: 20%;
+    width: 80%;
+    height: 90%;
+
+}
+
+#join_the_text {
+    color: #ffc703;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.part_2_text div {
+
+    margin-top: 10px;
+}
+
+#input_1 {
+    width: 98%;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 15px;
+
+}
+
+#input_2 {
+    width: 98%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 2px solid white;
+
+
+}
+
+#container_btn-2 {
+    display: flex;
+    justify-content: center;
+}
+
+#forgot_pass {
+    color: #ffc703;
+    margin-left: 60%;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+
+}
+
+#btn_2 {
+    width: 70%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 2px solid #cdc5a8;
+    background-color: #ffc703;
+
+}
+#sign_up{
+    text-align: center;
+    margin-top: 30px;
+}
+#sign_up a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#sign_btn:hover{
+    color: rgb(84, 99, 199);
+}
